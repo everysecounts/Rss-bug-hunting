@@ -39,7 +39,7 @@ function clearCompleted() {
 }
 
 function getVisibleTasks() {
-  return tasks;
+  return currentFilter === "all" ? tasks : tasks.filter((task) => (currentFilter === "done") === task.done);
 }
 
 function updateCounter() {
