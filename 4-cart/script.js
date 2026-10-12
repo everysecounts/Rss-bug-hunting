@@ -60,9 +60,8 @@ function removeItem(id) {
 }
 
 function applyPromo() {
-  if ((promoInput.value === "SALE10")) {
-    discount = 0.1;
-  }
+  const promoCode = promoInput.value.trim();
+  discount = promoCode === "SALE10" ? 0.1 : 0;
   renderCart();
 }
 
