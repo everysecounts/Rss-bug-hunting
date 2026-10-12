@@ -94,6 +94,8 @@ body {
 }
 
 .btn {
+  width: fit-content;
+  align-self: center;
   margin-top: auto;
   display: inline-block;
   padding: 12px 28px;
